@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery Page</title>
+  </head>
+  
+  <style>
+	.WebContainer	{
+    width:100%;
+	min-width:1000px;
+    height:auto;
+  }
+  
+  .body {
+	height: 100%;
+	margin: 0;
+  }
+  
+  .bg {
+	height: 100%; 
+	background: lightskyblue;
+	background-image: linear-gradient(lightblue);
+  }
+  
+  .fbadge {
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .fbadge {
+	width: 180px;
+  }
+  
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  }
+
+  li1 {
+  float: left;
+  }
+
+  li1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li1 a:hover {
+  background-color: grey;
+  }
+  
+  li2 {
+  float: right;
+  }
+
+  li2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li2 a:hover {
+  background-color: deepskyblue;
+  }
+  
+  .center {
+	float: left;
+  }
+  
+  li1 a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+
+  li1 a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+  }
+
+  li1.dropdown {
+	display: inline-block;
+  }
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+	}
+  
+  p.login {
+	border-right: right;
+	border-style: solid;
+	border-color: blue;
+	width: 110px;
+	text-align: center;
+  }
+  p.signin {
+	border-right: right;
+	border-style: solid;
+	border-color: blue;
+	width: 110px;
+	text-align: center;
+  }
+  p.list {
+    border-right: right;
+	border-style: solid;
+	border-color: blue;
+	width: 110px; 
+	text-align: center;
+  }
+  
+  p.signout {
+	border-style: solid;
+	border-color: blue;
+	width:  110px;
+	text-align: center;	
+  }
+  
+ h1 {
+	text-align: center;
+	color: blue;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 40px;
+	font-style: italic;
+  }
+  
+  p1 {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+  }
+  
+  p {
+	font-size: 20px;
+	color: black;
+	text-align: left;
+  }
+  
+  .epicondylitis {
+	float: right;
+	width: 350px;
+	length: 290px;
+  }
+
+  .hammy {
+	float: right;
+	width: 350px;
+	length: 270px;
+  }
+  
+  .ankle {
+	float: right;
+	width: 300px;
+	length: 200px;
+  }
+  </style>
+  
+	<header>
+		<body class="bg">
+		<img class="fbadge" src="fitnessbadge.png" alt="Fitness badge">
+	</header>
+	
+  <ul>
+	<li1><a href="http://localhost/Fitness%20website/FitnessHP.html">Home</a></li1>
+	<li1 class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sport</a>
+    <ul class="dropdown-content">
+      <a href="http://localhost/Fitness%20website/footballpage.html">Football/Soccer</a>
+      <a href="http://localhost/Fitness%20website/rugbypage.html">Rugby</a>
+      <a href="http://localhost/Fitness%20website/hockeypage.html">Hockey</a>
+	  <a href="http://localhost/Fitness%20website/tennispage.html">Tennis</a>
+    </ul>
+  </li1>
+	
+	<li1 class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">Recover</a>
+    <ul class="dropdown-content">
+	<a href="http://localhost/Fitness%20website/recovery.html">Recovery</a>
+	<a href="http://localhost/Fitness%20website/list1.html">Recovery List</a></ul></li1>
+	
+	<li2><a href="http://localhost/Fitness%20website/bmi.html">BMI Details</a></li2>
+	<li2><a href="http://localhost/Fitness%20website/list.html">To Do List</a></li2>	
+  </ul>
+  <br><br><br>
+  
+  <h1>WHAT ARE THE MOST COMMON INJURIES?<h1>
+  <p1>1) Epicondylitis (Tennis Elbow)</p1>
+  <img class="epicondylitis" src="tenniselbow.jpg">
+  <p>Epicondylitis is inflammation of the tendons of your elbow. Excessive flexion and extension of your wrist can cause tiny tears in the tissues of the tendons.
+  There are two types of epicondylitis: Medial epicondylitis affects the inside of your elbow, while lateral epicondylitis occurs on the outside.</p>
+  <br><br><br><br>
+  <p1>2) Shin Splints</p1>
+  <img class="epicondylitis" src="shinsplints.jpg">
+  <p>Constant sports activity or running can cause pain within the shinbone. Shin splints is knowns as medial tibial stress syndrome in the medical profession.
+  It commonly happens when there is a sudden change in a workout, meaning that there needs to be a moderate change in the workout routine. </p>
+  <br><br><br><br>
+  <p1>3) Hamstring Strains</p1>
+  <img class="hammy" src="hammy.jpg">
+  <p>Motions that can lead you to falling forwards or kicking your leg out suddenly and sharply can lead to a hamstring strain.
+  Hamstring refers to the three muscles at the back of the thigh.</p>
+  <br><br><br><br><br><br><br>
+  <p1>4) Knee Injuries</p1>
+  <img class="epicondylitis" src="knee.jpg">
+  <p>Also known as Patellofemoral Syndrome in the medical profession. This occurs when multiple tissues sustain the movement of the kneecap against the end of the thighbone.
+  The activities that lead to the damage of the tissues are jumping and running.</p>
+  <br><br>
+  <p1>5) Ankle Sprain</p1>
+  <img class="epicondylitis" src="ankle.jpg">
+  <p>In general a humans ligaments that are outside the ankle are weak. If the ankle twists, it can lead to the ligaments taering or stretching.
+  Ankle sprains can be very painful, depending on the amount of strain, but you should immediately see a doctor to make sure the ankle isn't fractured.</p>
+  <br><br><br>
+  
+  <h1>TREATMENT FOR THESE INJURIES</h1>
+  <p1>1) Epicondylitis (Tennis Elbow)</p1>
+  <p>Treatment for Epicondylitis is usually letting your elbow rest. If the medication that has been prescribed, to you, is not working then the doctor can suggest physical therapy.</p>
+  <p>If the symptoms are related to tennis, the doctor may need to see your swings, to determine the best ways to prevent stress on the injury. Using a brace can reduce the stress.
+  A physical therapist can teach you exercises to gradually stretch and strengthen your muscles, especially the muscles of your forearm.
+  Eccentric exercises, which involve lowering your wrist very slowly after raising it, are particularly helpful.</p>
+  <p1>2) Shin Splints</p1>
+  <p>Treatment for shin splints is usually conservative, consisting of ice, over-the-counter pain medication, and rest.
+  If pain persists, you should see a doctor to rule out a stress fracture.</p>
+  <p>Rest your body: Your body needs time to rest/heal.
+  Ice your shin to ease pain and swelling: Do it for 20-30 minutes every 3 to 4 hours for 2 to 3 days, or until the pain is gone.
+  If the pain is excessive and occrs frequently, take anti-inflammatory painkillers.</p>
+  <p1>3) Hamstring Strains</p1>
+  <p>Treatment for a hamstring strain often consists of RICE treatment at first.
+  It can progress to physical therapy to improve the strength and flexibility of the hamstring once the initial swelling and pain have resolved.</p>
+  <p>Stop putting strain or activities that will make the pan worse, until the pain is gone.
+  Ice the area about 24 to 48 hours after your injury. Keep the ice on for 15 minutes, take it away for 15 minutes and repeat.
+  Sit on a table with your injured leg hanging off. Gently raise and lower your leg during icing period.
+  After icing, lie in a prone position on your stomach and continue to gently bend and straighten your leg.
+  If the hamstring pain is tto much, then it would be best to use crutches to reduce unnecessary strain.</p> 
+  <p1>4) Knee Injuries</p1>
+  <p>Orthotic shoe inserts that take pressure off your knee joint can help, as can physical therapy to strengthen the quadriceps.
+  Healing patellofemoral syndrome can take up to six weeks.
+  Strengthening the muscles around your knee will make it more stable.</p>
+  <p>Your doctor may recommend physical therapy or different types of strengthening exercises based on the specific condition that is causing your pain.
+  If you are physically active or practice a sport, you may need exercises to correct movement patterns that may be affecting your knees and to establish good technique during your sport or activity.
+  Exercises to improve your flexibility and balance also are important.
+  Arch supports, sometimes with wedges on one side of the heel, can help shift pressure away from the side of the knee most affected by osteoarthritis.
+  In certain conditions, different types of braces may be used to help protect and support the knee joint.</p>
+  <p1>5) Ankle Sprain</p1>
+  <img class="ankle" src="ankleinjury.jpg">
+  <p>Physical therapy is often key to recovering from an ankle sprain because the right exercises can help rebuild flexibility and strength.
+  Treatment for a sprained ankle depends on the severity of your injury.
+  The treatment goals are to reduce pain and swelling, promote healing of the ligament, and restore function of the ankle.
+  For severe injuries, you may be referred to a specialist in musculoskeletal injuries, such as an orthopedic surgeon or a physician specializing in physical medicine and rehabilitation.</p>
+  <p>Also some self-treatment methods. Rest: Stay away from activities that can lead to swelling, pain, and strain.
+  Ice. Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake.
+  If you have vascular disease, diabetes or decreased sensation, talk with your doctor before applying ice.
+  Elevation. To reduce swelling, elevate your ankle above the level of your heart, especially at night. Gravity helps reduce swelling by draining excess fluid.
+  </p>
+  
+</body>
+</html>		

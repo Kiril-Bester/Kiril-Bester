@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+  </head>
+  
+  <style>
+  .WebContainer	{
+    width:100%;
+	min-width:1000px;
+    height:auto;
+  }
+  
+  .body {
+	height: 100%;
+	margin: 0;
+  }
+  
+  .bg {
+	height: 100%; 
+	background: lightskyblue;
+	background-image: linear-gradient(lightblue);
+  }
+  
+  .fbadge {
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+  }
+  
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  }
+
+  li1 {
+  float: left;
+  }
+
+  li1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li1 a:hover {
+  background-color: grey;
+  }
+  
+  li2 {
+  float: right;
+  }
+
+  li2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li2 a:hover {
+  background-color: deepskyblue;
+  }
+  
+  .center {
+	float: left;
+  }
+  
+  li1 a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+
+  li1 a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+  }
+
+  li1.dropdown {
+	display: inline-block;
+  }
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: grey;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+	
+  table {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 1000px;
+  }
+
+  td, th {
+	border: 2px solid blue;
+	text-align: center;
+	padding: 10px;
+  }
+
+  tr:nth-child(even) {
+	background-color: lightblue;
+  }
+	
+  h1 {
+	text-align: center;
+	color: white;
+  }
+  
+  input {
+	width: 150px;
+	height: 30px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	background-color: lightgrey;
+	color: blue;
+  }
+  
+  .status {
+	width: 160px
+  }
+  
+  .submit {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 50px;
+	background-color: green;
+	color: white;
+	text-align: center;
+	border: 0;
+  }
+  .reset {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 50px;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	border: 0;
+  }
+  
+  .ignore {
+	border: 2px lightskyblue;
+	padding: 0;
+	background-color: lightskyblue;
+  }
+  
+  </style>
+  
+  <header>
+  <body class="bg">
+	<img class="fbadge" src="fitnessbadge.png" alt="Fitness badge">
+  </header>
+  
+  <ul>
+	<li1><a href="http://localhost/Fitness%20website/FitnessHP.html">Home</a></li1>
+	<li1 class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sport</a>
+    <ul class="dropdown-content">
+      <a href="http://localhost/Fitness%20website/footballpage.html">Football/Soccer</a>
+      <a href="http://localhost/Fitness%20website/rugbypage.html">Rugby</a>
+      <a href="http://localhost/Fitness%20website/hockeypage.html">Hockey</a>
+	  <a href="http://localhost/Fitness%20website/tennispage.html">Tennis</a>
+    </ul>
+  </li1>
+	
+	<li1><a href="http://localhost/Fitness%20website/list.html">To Do List</a></li1>
+	<li1 class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">Recover</a>
+    <ul class="dropdown-content">
+	<a href="http://localhost/Fitness%20website/recovery.html">Recovery</a>
+	<a href="http://localhost/Fitness%20website/list1.html">Recovery List</a></ul></li1>
+	<li1><a href="http://localhost/Fitness%20website/bmi.html">BMI Details</a></li1>
+	
+	<li2><a href="http://localhost/Fitness%20website/sign-out.html">Sign-out</a></li2>
+	<li2><a href="http://localhost/Fitness%20website/createaccount.php">Sign-up</a></li2>
+	<li2><a href="http://localhost/Fitness%20website/login.php">Login</a></li2>		
+  </ul>
+  <br><br><br><br><br>
+  
+  <h1>Keep Track of YOUR Progress</h1>
+  
+  
+  <div>
+<table action="tracker.php" method="POST">
+  <tr>
+    <th>Date</th>
+    <th>Name & Surname</th>
+    <th>Excercise Description</th>
+	<th>Calorie Intake</th>
+	<th>Weight Loss</th>
+  </tr>
+  <tr>
+    <td>(DD/MM/YY)</td>
+    <td>Example: (Bob Jacobus)</td>
+    <td>Example: (Ran 2km)</td>
+	<td>Limit: 
+	<input type="text" id="calorielimit" name="calorie"></td>
+	<td>Limit: 
+	<input type="text" id="weightlimit" name="weightloss"></td>
+	
+  </tr>
+  <tr>
+    <td>
+	<input class="date" type="text" id="date"></td>
+    <td>
+	<input class="name" type="text" id="names" ></td>
+    <td>
+	<input class="excercise" type="text" id="excercise"></td>
+	<td>
+	<input class="calorie" type="text" id="calorie"></td>
+    <td>
+	<input class="wloss" type="text" id="wloss"></td>
+	
+  </tr>
+  <tr>
+    <td>
+	<input class="date" type="text" id="date1"></td>
+    <td>
+	<input class="name" type="text" id="names1" ></td>
+    <td>
+	<input class="excercise" type="text" id="excercise1"></td>
+	<td>
+	<input class="calorie" type="text" id="calorie1"></td>
+    <td>
+	<input class="wloss" type="text" id="wloss1"></td>
+  </tr>
+  
+  <tr>
+    <td>
+	<input class="date" type="text" id="date2"></td>
+    <td>
+	<input class="name" type="text" id="names2" ></td>
+    <td>
+	<input class="excercise" type="text" id="excercise2"></td>
+	<td>
+	<input class="calorie" type="text" id="calorie2"></td>
+    <td>
+	<input class="wloss" type="text" id="wloss2"></td>
+ </tr>
+ 
+  <tr>
+    <td>
+	<input class="date" type="text" id="date3"></td>
+    <td>
+	<input class="name" type="text" id="names3" ></td>
+    <td>
+	<input class="excercise" type="text" id="excercise3"></td>
+	<td>
+	<input class="calorie" type="text" id="calorie3"></td>
+    <td>
+	<input class="wloss" type="text" id="wloss3"></td>
+  </tr>
+  
+  <tr>
+    <td>
+	<input class="date" type="text" id="date4"></td>
+    <td>
+	<input class="name" type="text" id="names4" ></td>
+    <td>
+	<input class="excercise" type="text" id="excercise4"></td>
+	<td>
+	<input class="calorie" type="text" id="calorie4"></td>
+    <td>
+	<input class="wloss" type="text" id="wloss4"></td>
+  </tr>
+  
+  <tr>
+    <td>
+	<input class="date" type="text" id="date5"></td>
+    <td>
+	<input class="name" type="text" id="names5" ></td>
+    <td>
+	<input class="excercise" type="text" id="excercise5"></td>
+	<td>
+	<input class="calorie" type="text" id="calorie5"></td>
+    <td>
+	<input class="wloss" type="text" id="wloss5"></td>
+  </tr>
+  
+  <tr>
+    <td>
+	<input class="date" type="text" id="date6"></td>
+    <td>
+	<input class="name" type="text" id="names6" ></td>
+    <td>
+	<input class="excercise" type="text" id="excercise6"></td>
+	<td>
+	<input class="calorie" type="text" id="calorie6"></td>
+    <td>
+	<input class="wloss" type="text" id="wloss6"></td>
+  </tr> 
+  
+  <td class="ignore"></td>
+  <td class="ignore"></td>
+  <td>Total: </td>
+  <td id="result"></td>
+  <td>Total: </td>
+  <td id="result1"></td>
+</table>
+
+  <br>
+  
+	<button class="submit" type="btn" id="submit">Submit</button>
+	<button class="reset" type="reset" id="reset">Reset</button>
+  </div>
+  
+</body>
+</html>
+  
+  
